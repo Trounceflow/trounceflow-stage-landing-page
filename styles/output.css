@@ -699,14 +699,6 @@ select {
   position: relative;
 }
 
-.top-3 {
-  top: 0.75rem;
-}
-
-.top-2 {
-  top: 0.5rem;
-}
-
 .top-1 {
   top: 0.25rem;
 }
@@ -852,6 +844,10 @@ select {
   height: 3rem;
 }
 
+.h-14 {
+  height: 3.5rem;
+}
+
 .h-36 {
   height: 9rem;
 }
@@ -877,28 +873,12 @@ select {
   height: 100%;
 }
 
-.h-14 {
-  height: 3.5rem;
-}
-
 .max-h-28 {
   max-height: 7rem;
 }
 
 .max-h-\[700px\] {
   max-height: 700px;
-}
-
-.max-h-\[600px\] {
-  max-height: 600px;
-}
-
-.max-h-\[500px\] {
-  max-height: 500px;
-}
-
-.max-h-\[550px\] {
-  max-height: 550px;
 }
 
 .min-h-fit {
@@ -912,6 +892,10 @@ select {
 
 .w-12 {
   width: 3rem;
+}
+
+.w-14 {
+  width: 3.5rem;
 }
 
 .w-36 {
@@ -934,6 +918,10 @@ select {
   width: 65%;
 }
 
+.w-\[82\%\] {
+  width: 82%;
+}
+
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
@@ -941,22 +929,6 @@ select {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[80\%\] {
-  width: 80%;
-}
-
-.w-\[85\%\] {
-  width: 85%;
-}
-
-.w-\[82\%\] {
-  width: 82%;
-}
-
-.w-14 {
-  width: 3.5rem;
 }
 
 .max-w-4xl {
@@ -979,24 +951,16 @@ select {
   max-width: 290px;
 }
 
+.max-w-\[845px\] {
+  max-width: 845px;
+}
+
 .max-w-sm {
   max-width: 24rem;
 }
 
 .max-w-xs {
   max-width: 20rem;
-}
-
-.max-w-3xl {
-  max-width: 48rem;
-}
-
-.max-w-\[850px\] {
-  max-width: 850px;
-}
-
-.max-w-\[845px\] {
-  max-width: 845px;
 }
 
 .flex-none {
@@ -1073,6 +1037,10 @@ select {
   row-gap: 2.5rem;
 }
 
+.gap-y-16 {
+  row-gap: 4rem;
+}
+
 .gap-y-3 {
   row-gap: 0.75rem;
 }
@@ -1085,17 +1053,13 @@ select {
   row-gap: 1.25rem;
 }
 
-.gap-y-12 {
-  row-gap: 3rem;
-}
-
-.gap-y-16 {
-  row-gap: 4rem;
-}
-
 .break-normal {
   overflow-wrap: normal;
   word-break: normal;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .rounded-3xl {
@@ -1110,16 +1074,12 @@ select {
   border-radius: 0.5rem;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
-.rounded {
-  border-radius: 0.25rem;
-}
-
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .border {
@@ -1399,14 +1359,6 @@ select {
     top: 0.75rem;
   }
 
-  .md\:top-4 {
-    top: 1rem;
-  }
-
-  .md\:top-5 {
-    top: 1.25rem;
-  }
-
   .md\:order-1 {
     order: 1;
   }
@@ -1508,28 +1460,16 @@ select {
     flex-direction: row;
   }
 
-  .md\:gap-6 {
-    gap: 1.5rem;
-  }
-
-  .md\:gap-28 {
-    gap: 7rem;
-  }
-
-  .md\:gap-20 {
-    gap: 5rem;
-  }
-
   .md\:gap-16 {
     gap: 4rem;
   }
 
-  .md\:gap-y-12 {
-    row-gap: 3rem;
+  .md\:gap-6 {
+    gap: 1.5rem;
   }
 
-  .md\:rounded-xl {
-    border-radius: 0.75rem;
+  .md\:gap-y-12 {
+    row-gap: 3rem;
   }
 
   .md\:px-6 {
@@ -1591,9 +1531,5 @@ select {
 @media (min-width: 1024px) {
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .lg\:rounded-xl {
-    border-radius: 0.75rem;
   }
 }
