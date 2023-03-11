@@ -1492,6 +1492,18 @@ select {
     gap: 1.5rem;
   }
 
+  .md\:gap-28 {
+    gap: 7rem;
+  }
+
+  .md\:gap-20 {
+    gap: 5rem;
+  }
+
+  .md\:gap-16 {
+    gap: 4rem;
+  }
+
   .md\:gap-y-12 {
     row-gap: 3rem;
   }
