@@ -5,8 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Trounceflow – Flow Data, Trading Signals" />
+    <meta name="description" content="Trounceflow – Flow Data, Trading Signals" />
     <title>Trounceflow – Flow Data, Trading Signals</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,12 +15,13 @@
 </head>
 
 <body class="bg-light_bg">
-    <nav class="hidden md:block mt-10">
+    <!-- Navigation bar -->
+    <nav class="py-10 bg-light_bg">
         <div class="mx-auto w-11/12 max-w-7xl">
-            <div class="flex items-center justify-between">
-                <div class="w-[25%]">
+            <div class="flex items-center justify-between relative overflow-hidden">
+                <div class=" w-3/4 md:w-1/4">
                     <!-- Logo -->
-                    <svg width="305" height="40" viewBox="0 0 305 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="w-56 md:w-72 h-10" viewBox="0 0 305 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M304.812 10.2209C304.7 10.3767 304.514 10.4388 304.486 10.5433C302.729 17.0867 300.99 23.6349 299.219 30.1746C299.158 30.3975 298.799 30.6838 298.57 30.6927C297.278 30.7427 295.982 30.7426 294.69 30.6929C294.458 30.684 294.091 30.4006 294.036 30.1809C292.936 25.8407 291.874 21.491 290.798 17.1448C290.762 16.9988 290.661 16.869 290.547 16.6494C289.433 21.2296 288.352 25.7091 287.234 30.1796C287.179 30.3993 286.811 30.6859 286.581 30.6931C285.094 30.7395 283.605 30.7168 282.126 30.7168C280.224 23.533 278.333 16.3865 276.408 9.11443C278 9.11443 279.529 9.09749 281.057 9.13968C281.216 9.14408 281.454 9.47773 281.506 9.69441C282.244 12.7848 282.964 15.8798 283.674 18.977C283.999 20.3963 284.293 21.8228 284.766 23.271C285.034 22.2065 285.3 21.1413 285.572 20.0776C286.471 16.5563 287.366 13.0337 288.294 9.51981C288.34 9.34446 288.679 9.13672 288.887 9.13133C290.233 9.0964 291.581 9.11341 292.921 9.11341C294.117 13.9093 295.301 18.6602 296.486 23.4111C296.547 23.4086 296.608 23.4061 296.669 23.4036C297.584 19.4356 298.497 15.467 299.417 11.4999C299.57 10.8392 299.71 10.17 299.943 9.53671C300.015 9.34104 300.372 9.13853 300.604 9.13199C301.953 9.09393 303.304 9.11336 304.733 9.11335C304.812 9.45794 304.812 9.80252 304.812 10.2209Z"
                             fill="#1E1E1E" />
@@ -75,23 +75,42 @@
                             fill="#69A8D9" />
                     </svg>
                 </div>
-                <div class="flex w-[65%] justify-between items-center">
+                <div class="hidden md:flex w-[65%] justify-between items-center">
                     <ul class="flex gap-6">
-                        <li><a href="#products">Flow Data</a></li>
-                        <li><a href="#pricing">Trade Ideas</a></li>
-                        <li><a href="#about_us">Company</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a class="hover:text-primary/60" href="#products">Flow Data</a></li>
+                        <li><a class="hover:text-primary/60" href="#pricing">Trade Ideas</a></li>
+                        <li><a class="hover:text-primary/60" href="#about_us">Company</a></li>
+                        <li><a class="hover:text-primary/60" href="#contact">Contact</a></li>
                     </ul>
                     <div class="flex items-center gap-4">
-                        <a href="">Sign in</a>
+                        <a class="hover:text-primary/60" href="">Sign in</a>
                         <button type="button"
-                            class="rounded-full bg-primary py-1 px-4 text-sm font-light text-white md:text-2xl">
+                            class="rounded-full bg-primary py-1 px-4 text-sm font-light text-white md:text-2xl hover:opacity-75">
                             Get Started &#8594;
                         </button>
                     </div>
                 </div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-8 h-8 md:hidden hover:cursor-pointer" id="menuBtn">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+                </svg>
             </div>
-
+            <div id="mobile-menu"
+                class="hidden md:!hidden absolute bg-light_bg border-b drop-shadow-sm w-11/12 flex-col justify-between items-center py-8 transition-all">
+                <ul class="flex flex-col items-center gap-6">
+                    <li><a class="menu-link hover:text-primary/60" href="#products">Flow Data</a></li>
+                    <li><a class="menu-link hover:text-primary/60" href="#pricing">Trade Ideas</a></li>
+                    <li><a class="menu-link hover:text-primary/60" href="#about_us">Company</a></li>
+                    <li><a class="menu-link hover:text-primary/60" href="#contact">Contact</a></li>
+                </ul>
+                <div class="flex flex-col items-center gap-6 mt-6 ">
+                    <a class="menu-link block hover:text-primary/60" href="">Sign in</a>
+                    <button type="button"
+                        class="menu-link rounded-full bg-primary py-2 px-4 text-sm font-light text-white md:text-2xl hover:opacity-75">
+                        Get Started &#8594;
+                    </button>
+                </div>
+            </div>
         </div>
     </nav>
     <main>
@@ -324,7 +343,7 @@
                                 </li>
                             </ul>
                             <button
-                                class="relative border rounded-full bg-primary py-1 px-4 text-sm font-light text-white mt-9 md:text-2xl focus:ring-2 focus:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed border-transparent hover:bg-opacity-70 focus:primary ring-slate-700 hover:ring-slate-500 focus-visible:outline-white"
+                                class="relative border rounded-full bg-primary py-2 px-4 text-sm tracking-wider md:tracking-normal font-light text-white mt-9 md:text-2xl focus:ring-2 focus:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed border-transparent hover:bg-opacity-70 focus:primary ring-slate-700 hover:ring-slate-500 focus-visible:outline-white"
                                 aria-label="Get started with the base plan for $50000 per year">
                                 Get Started &#8594;
                             </button>
@@ -391,7 +410,7 @@
                                 </li>
                             </ul>
                             <button
-                                class="relative border rounded-full bg-white py-1 md:py-2 px-4 text-sm font-light text-primary mt-9 md:text-2xl focus:ring-2 focus:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed border-transparent hover:bg-opacity-70 focus:primary ring-slate-700 hover:ring-slate-500 focus-visible:outline-white"
+                                class="relative border rounded-full bg-white py-2 px-4 text-sm tracking-wider md:tracking-normal font-light text-primary mt-9 md:text-2xl focus:ring-2 focus:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed border-transparent hover:bg-opacity-70 focus:primary ring-slate-700 hover:ring-slate-500 focus-visible:outline-white"
                                 aria-label="Get started with the base plan for $50000 per year">
                                 Get Started &#8594;
                             </button>
@@ -462,7 +481,7 @@
                                 </li>
                             </ul>
                             <button
-                                class="relative border rounded-full bg-primary py-1 px-4 text-sm font-light text-white mt-9 md:text-2xl focus:ring-2 focus:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed border-transparent hover:bg-opacity-70 focus:primary ring-slate-700 hover:ring-slate-500 focus-visible:outline-white"
+                                class="relative border rounded-full bg-primary py-2 px-4 text-sm tracking-wider md:tracking-normal font-light text-white mt-9 md:text-2xl focus:ring-2 focus:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed border-transparent hover:bg-opacity-70 focus:primary ring-slate-700 hover:ring-slate-500 focus-visible:outline-white"
                                 aria-label="Get started with the base plan for $50000 per year">
                                 Get Started &#8594;
                             </button>
@@ -1055,6 +1074,7 @@
             </div>
         </div>
     </footer>
+    <script src="./index.js"></script>
 </body>
 
 </html>
