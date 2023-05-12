@@ -10,6 +10,9 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Manrope', 'sans-serif']
+      },
+      backgroundImage: {
+        'hero-pattern': "url('./splash-lines.svg')"
       }
     }
   },
