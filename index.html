@@ -83,9 +83,12 @@
                         <li><a class="hover:text-primary/60" href="#contact">About</a></li>
                     </ul>
                     <div class="flex items-center gap-4">
-                        <a class="hover:text-primary/60" href="">Sign in</a>
+                        <a class="hover:text-primary/60" href="https://www.trounceflow.com/login/" target="_blank"
+                            rel="noopener">Sign
+                            in</a>
                         <button type="button"
-                            class="rounded-full bg-primary py-1 px-4 text-sm font-light text-white md:text-2xl hover:opacity-75">
+                            class="rounded-full bg-primary py-1 px-4 text-sm font-light text-white md:text-2xl hover:opacity-75"
+                            onclick="onLinkInNewTab('https://www.trounceflow.com/login/')">
                             Get Started &#8594;
                         </button>
                     </div>
@@ -910,36 +913,36 @@
                                     First Name*
                                 </label>
                                 <input class="w-full rounded-lg py-1 px-2 border border-gray-300" type="text"
-                                    name="first_name" />
+                                    name="first_name" id="first_name" />
                             </div>
                             <div class="md:w-2/4 flex flex-col">
                                 <label class="mb-3 md:mb-2 text-sm md:text-3xl" for="last_name">
                                     Last Name*
                                 </label>
                                 <input class="w-full rounded-lg py-1 px-2 border border-gray-300" type="text"
-                                    name="last_name" />
+                                    name="last_name" id="last_name" />
                             </div>
                         </fieldset>
                         <fieldset class="flex flex-col mb-4">
-                            <label class="mb-3 md:mb-2 text-sm md:text-3xl" for="email">
+                            <label class="mb-3 md:mb-2 text-sm md:text-3xl" for="e-mail">
                                 Email*
                             </label>
-                            <input class="w-full rounded-lg py-1 px-2 border border-gray-300" type="email"
-                                name="email" />
+                            <input class="w-full rounded-lg py-1 px-2 border border-gray-300" type="email" name="e-mail"
+                                id="e-mail" />
                         </fieldset>
                         <fieldset class="flex flex-col mb-4">
                             <label class="mb-3 md:mb-2 text-sm md:text-3xl" for="company_name">
                                 Company Name*
                             </label>
                             <input class="w-full rounded-lg py-1 px-2 border border-gray-300" type="text"
-                                name="company_name" />
+                                name="company_name" id="company_name" />
                         </fieldset>
                         <fieldset class="flex flex-col mb-4">
                             <label class="mb-3 md:mb-2 text-sm md:text-3xl" for="message">
                                 Your Message (Optional)
                             </label>
                             <textarea class="w-full rounded-lg py-1 px-2 border border-gray-300 max-h-28" name="message"
-                                id="" cols="30" rows="5"></textarea>
+                                id="message" cols="30" rows="5"></textarea>
                         </fieldset>
                         <button type="button"
                             class="block mx-auto rounded-full bg-primary py-1 px-4 text-sm font-light text-white md:text-2xl">
@@ -954,9 +957,10 @@
     <!-- Footer -->
     <footer>
         <div class="mx-auto w-11/12 max-w-7xl mt-24 md:mt-36">
-            <div class="grid grid-cols-1 lg:grid-cols-3">
-                <div class="order-1 flex flex-col gap-3">
-                    <svg width="305" height="40" viewBox="0 0 305 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="grid grid-cols-1 md:grid-rows-2 lg:grid-rows-1 lg:grid-cols-2 gap-y-16 gap-x-10 mb-10">
+                <div class="flex flex-col gap-8">
+                    <svg class="w-72 h-full md:w-40 md:h-5 lg:w-52 lg:h-7" viewBox="0 0 305 40" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M304.812 10.2209C304.7 10.3767 304.514 10.4388 304.486 10.5433C302.729 17.0867 300.99 23.6349 299.219 30.1746C299.158 30.3975 298.799 30.6838 298.57 30.6927C297.278 30.7427 295.982 30.7426 294.69 30.6929C294.458 30.684 294.091 30.4006 294.036 30.1809C292.936 25.8407 291.874 21.491 290.798 17.1448C290.762 16.9988 290.661 16.869 290.547 16.6494C289.433 21.2296 288.352 25.7091 287.234 30.1796C287.179 30.3993 286.811 30.6859 286.581 30.6931C285.094 30.7395 283.605 30.7168 282.126 30.7168C280.224 23.533 278.333 16.3865 276.408 9.11443C278 9.11443 279.529 9.09749 281.057 9.13968C281.216 9.14408 281.454 9.47773 281.506 9.69441C282.244 12.7848 282.964 15.8798 283.674 18.977C283.999 20.3963 284.293 21.8228 284.766 23.271C285.034 22.2065 285.3 21.1413 285.572 20.0776C286.471 16.5563 287.366 13.0337 288.294 9.51981C288.34 9.34446 288.679 9.13672 288.887 9.13133C290.233 9.0964 291.581 9.11341 292.921 9.11341C294.117 13.9093 295.301 18.6602 296.486 23.4111C296.547 23.4086 296.608 23.4061 296.669 23.4036C297.584 19.4356 298.497 15.467 299.417 11.4999C299.57 10.8392 299.71 10.17 299.943 9.53671C300.015 9.34104 300.372 9.13853 300.604 9.13199C301.953 9.09393 303.304 9.11336 304.733 9.11335C304.812 9.45794 304.812 9.80252 304.812 10.2209Z"
                             fill="#1E1E1E" />
@@ -1009,68 +1013,46 @@
                             d="M143.527 9.4541C144.857 9.59696 146.131 9.64429 147.357 9.91185C148.865 10.2409 149.662 11.4245 150.009 12.8209C150.245 13.7699 150.197 14.7897 150.279 15.8252C149.246 15.8252 148.333 15.8252 147.422 15.8252C147.338 15.246 147.225 14.6837 147.18 14.1161C147.039 12.362 145.541 11.9105 144.245 11.9508C143.897 11.9616 143.554 12.082 143.207 12.1419C141.713 12.3995 141.038 13.5157 140.969 14.8014C140.795 18.071 140.756 21.3519 140.798 24.6265C140.811 25.5954 141.2 26.5862 141.55 27.5164C141.89 28.4175 142.7 28.8511 143.637 28.8407C144.389 28.8323 145.213 28.8042 145.873 28.4993C147.044 27.9585 147.441 26.8116 147.497 25.5886C147.528 24.919 147.673 24.5489 148.451 24.6277C149.114 24.695 149.79 24.6416 150.457 24.6416C150.668 27.2841 149.886 29.9181 147.385 30.8575C146.103 31.3389 144.768 31.5277 143.354 31.281C142.409 31.1162 141.484 31.0415 140.637 30.5223C139.185 29.6324 138.554 28.2112 138.251 26.6724C137.536 23.0475 137.918 19.3666 137.936 15.7132C137.945 14.0103 138.41 12.3081 139.764 11.0312C140.653 10.1918 141.695 9.7356 142.902 9.61523C143.088 9.59672 143.267 9.51092 143.527 9.4541Z"
                             fill="#1E1E1E" />
                     </svg>
-
-                    <p class="text-sm font-normal mb-4 max-w-xs">
-                        10367410 Devonshire House, One Mayfair Place, London, United Kingdom,
-                        W1J 8AJ
+                    <p class="text-4xl font-medium mb-4 max-w-[90%] lg:text-2xl lg:max-w-sm">
+                        Flows and Positions for Emerging Markets Macro
                     </p>
                 </div>
-                <div class="order-3 md:order-2 grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 w-full gap-y-5 gap-x-24">
+                <div class="grid grid-cols-1 md:grid-cols-3 w-full gap-y-16 gap-x-10">
                     <div class="max-w-xs">
-                        <p class="text-xl font-bold mb-3">PLATFORM</p>
-                        <ul class="text-sm font-normal flex flex-col gap-5">
-                            <li><a href="">Products</a> </li>
-                            <li><a href="">Price</a> </li>
+                        <p class="text-xl text-gray-800 font-bold mb-3">Contact</p>
+                        <ul class="text-sm text-gray-600 font-normal flex flex-col gap-2">
+                            <li><a href="#">+44 7887 546080 </a> </li>
+                            <li><a
+                                    href="mailto:contact@emerging-alternative.com?subject=Contact%20Emerging%20Alternative">info@trounceflow.com</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="max-w-xs">
-                        <p class="text-xl font-bold mb-3">Developers</p>
-                        <ul class="text-sm font-normal flex flex-col gap-5">
-                            <li><a href="">Documentation</a> </li>
+                        <p class="text-xl text-gray-800  font-bold mb-3">Follow us</p>
+                        <ul class="text-sm text-gray-600  font-normal flex flex-col gap-5">
+                            <li>
+                                <a href="https://www.linkedin.com/company/trounceflow/">Linkedin</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="max-w-xs">
-                        <p class="text-xl font-bold mb-3">COMPANY</p>
+                        <p class="text-xl text-gray-800 font-bold mb-4">Address</p>
                         <ul class="text-sm font-normal flex flex-col gap-5">
-                            <li><a href="">Team</a> </li>
-                            <li><a href="">Contact</a> </li>
+                            <li class="text-sm text-gray-600 font-normal max-w-xs">
+                                2 Burford Lodge, Elstead, Surrey, UK
+                            </li>
+                            <li class="text-sm text-gray-600 font-normal max-w-xs">
+                                Trounceflow Limited: incorporated on 9 Sep 2016 in England & Wales with company number
+                                10367410
+                            </li>
                         </ul>
                     </div>
-                    <div class="max-w-xs">
-                        <p class="text-xl font-bold mb-3">Connect</p>
-                        <ul class="text-sm font-normal flex flex-col gap-5">
-                            <li><a href="">LinkedIn</a> </li>
-                            <li><a href="">Twitter</a> </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="order-2 md:order-3 mb-6 md:mb-0">
-                    <div class="">
-                        <p class="text-xl font-bold mb-3 uppercase">The letest in Trounce flow</p>
-                        <p class="text-sm font-normal mb-4">Stay current with our newsletter</p>
-                    </div>
-                    <form>
-                        <label for="email" class="sr-only">Email</label>
-                        <input class="w-full rounded-lg py-1 px-2 border border-gray-300" type="email" id="email"
-                            name="email" placeholder="Email" />
-                        <button type="button"
-                            class="block mt-4 rounded-full bg-primary py-1 px-4 text-sm font-light text-white md:text-2xl">
-                            Subcribe
-                        </button>
-                    </form>
+
                 </div>
             </div>
-            <div class="flex flex-col justify-between md:flex-row border-t border-primary/50 py-4 mt-4">
-                <p class="order-2 md:order-1 mt-2 md:mt-0 text-sm font-normal">© 2022 TrounceFlow. All rights reserved.
+            <div class="flex flex-row border-t border-gray-300 py-4 mt-4">
+                <p class="mt-2 md:mt-0 text-sm text-gray-500  font-normal">© 2022 TrounceFlow. All rights reserved.
                 </p>
-                <div class="order-1 md:order-2 flex flex-col md:flex-row gap-2 md:gap-6">
-                    <a class="text-sm font-normal" href="">
-                        Terms
-                    </a>
-                    <a class="text-sm font-normal" href="">
-                        Privacy and Policy
-                    </a>
-                </div>
             </div>
         </div>
     </footer>
